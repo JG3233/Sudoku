@@ -1,7 +1,19 @@
 import requests
+import argparse
 
-response = requests.get('https://sugoku.herokuapp.com/board?difficulty=easy')
-board = response.json()['board']
+parser = argparse.ArgumentParser(description='Solve backtracking Suduko with a provided difficulty setting.')
+parser.add_argument('difficulty', metavar='DIF', type=int, help='1:easy | 2:medium | 3:hard')
+args = parser.parse_args()
+
+if args.difficulty == 1:
+    response = requests.get('https://sugoku.herokuapp.com/board?difficulty=easy')
+    board = response.json()['board']
+elif args.difficulty == 2:
+    response = requests.get('https://sugoku.herokuapp.com/board?difficulty=medium')
+    board = response.json()['board']
+elif args.difficulty == 3:
+    response = requests.get('https://sugoku.herokuapp.com/board?difficulty=hard')
+    board = response.json()['board']
 
 default_board = [
     [7,8,0,4,0,0,1,2,0],

@@ -98,7 +98,9 @@ def find_empty(b):
         
     return None
 
+print("Initial\n")
 print_board(playing_board)
 solve(playing_board)
-print('\n- - - - - - - - - - -\n')
+print('\n- - - - - - - - - - -')
+print('Solved\n')
 print_board(playing_board)

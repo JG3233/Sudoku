@@ -1,6 +1,7 @@
 # sudoku.py | Jacob Gilhaus
-# Sudoku backtracking solver
-# Inspired by Tech with Tim
+#
+# Backtracking Sudoku solver
+# Influenced by Tech with Tim
 
 import requests
 import argparse

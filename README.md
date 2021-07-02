@@ -1,6 +1,6 @@
 # Sudoku
 
->Usage: python3 sudoku.py [difficulty]
+>Usage: python3 sudoku.py [difficulty]   
 >difficulties: e, m, h
 
 A quick sudoku solver that utilizes a backtracking algorithm. 

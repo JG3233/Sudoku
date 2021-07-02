@@ -7,16 +7,16 @@ import requests
 import argparse
 
 parser = argparse.ArgumentParser(description='Solve backtracking Suduko with a provided difficulty setting.')
-parser.add_argument('difficulty', metavar='DIF', type=int, help='1:easy | 2:medium | 3:hard')
+parser.add_argument('difficulty', metavar='DIF', choices=['e','m','h'], help='e:easy | m:medium | h:hard')
 args = parser.parse_args()
 
-if args.difficulty == 1:
+if args.difficulty == 'e':
     response = requests.get('https://sugoku.herokuapp.com/board?difficulty=easy')
     board = response.json()['board']
-elif args.difficulty == 2:
+elif args.difficulty == 'm':
     response = requests.get('https://sugoku.herokuapp.com/board?difficulty=medium')
     board = response.json()['board']
-elif args.difficulty == 3:
+elif args.difficulty == 'h':
     response = requests.get('https://sugoku.herokuapp.com/board?difficulty=hard')
     board = response.json()['board']
 

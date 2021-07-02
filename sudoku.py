@@ -101,6 +101,7 @@ def find_empty(b):
 print("Initial\n")
 print_board(playing_board)
 solve(playing_board)
-print('\n- - - - - - - - - - -')
+input()
+print('- - - - - - - - - - -')
 print('Solved\n')
 print_board(playing_board)

@@ -8,7 +8,7 @@ A sudoku game with a solver that utilizes a backtracking algorithm. Use main to 
 
 ## The Guts
 
-The printed board is gathered via an API call to the Sugoku Heroku app. They come in 3 flavors: easy, medium, and hard. The player can select which difficulty they prefer via the argument. Once the player is ready for the answer, simply tap any key and check your solution!
+The printed board is gathered via an API call to the Sugoku Heroku app. They come in 3 flavors: easy, medium, and hard. The player can select which difficulty they prefer via the argument. When games end check the console to quit or play again!
 
 ### Solver
 

@@ -6,7 +6,7 @@
 import requests
 import argparse
 
-parser = argparse.ArgumentParser(description='Solve backtracking Suduko with a provided difficulty setting.')
+parser = argparse.ArgumentParser(description='Solve backtracking Sudoku with a provided difficulty setting.')
 parser.add_argument('difficulty', metavar='DIF', choices=['e','m','h'], help='e:easy | m:medium | h:hard')
 args = parser.parse_args()
 
@@ -98,10 +98,12 @@ def find_empty(b):
         
     return None
 
-print("Initial\n")
-print_board(playing_board)
-solve(playing_board)
-input()
-print('- - - - - - - - - - -')
-print('Solved\n')
-print_board(playing_board)
+print("Welcome to Sudoku!\n")
+# print_board(playing_board)
+
+# Useful for command line backtracking algo
+# input()
+# solve(playing_board)
+# print('- - - - - - - - - - -')
+# print('Solved\n')
+# print_board(playing_board)

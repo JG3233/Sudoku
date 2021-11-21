@@ -16,5 +16,14 @@ The solving technique this program uses is a recursive backtracking algorithm. I
 
 Players may notice a longer delay with increasing difficulty. This is due to the algorithm needing to backtrack farther or more often, but it is still very efficient and far quicker than the naive solution.
 
+### GUI
+
+As noted, the inspiration came from a Tech with Tim project as an introduction to pygame. I wanted to write
+an application that was algorithmically interesting and also allowed me to experiment with game-playing, so this was a good compromise. I used Tim's base GUI and modified from there to make improvements and learn pygame. As Tim also mentions in his video the GUI was somewhat of an afterthought, so this made for a great starting point.
+
+### Alterations
+
+A list of changes and updates to the original project:
+
 >Author: Jacob Gilhaus  
 >Based on a Tech with Tim project.

@@ -1,10 +1,10 @@
 # Sudoku
 
->Usage: python3 sudoku.py [difficulty]   
+>Usage: python3 main.py [difficulty]   
 >
 >difficulties: e, m, h
 
-A quick sudoku solver that utilizes a backtracking algorithm. 
+A sudoku game with a solver that utilizes a backtracking algorithm. Use main to play the game. The solver is in sudoku.py
 
 ## The Guts
 
